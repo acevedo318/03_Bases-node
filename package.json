@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/acevedo318/03_Bases-node#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "yargs": "^15.4.1"
-  }
+  },
+  "devDependencies": {}
 }

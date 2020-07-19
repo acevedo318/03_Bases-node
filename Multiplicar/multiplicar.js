@@ -1,7 +1,8 @@
 // Requireds
 const fs = require("fs");
+const colors = require("colors");
 
-let crearArchivo = (base) => {
+let crearArchivo = (base,limite = 10) => {
   return new Promise((resolve, reject) => {
     let data = "";
 
@@ -10,7 +11,7 @@ let crearArchivo = (base) => {
         return;
     }
 
-    for (let index = 0; index <= 10; index++) {
+    for (let index = 0; index <= limite; index++) {
       data += `${base} * ${index} = ${base * index} \n`;
     }
 
@@ -26,7 +27,23 @@ let crearArchivo = (base) => {
   });
 };
 
+let listarTabla = async (base, limite = 10) => {
+
+    let data = "";
+
+    console.log("=======================================".green);
+    console.log(`Tabla del ${base}`.green);
+    console.log("=======================================".green);
+
+    for (let index = 0; index <= limite; index++) {
+      data += `${base} * ${index} = ${base * index} \n`;
+    }
+
+    console.log(data);
+}
+
 
 module.exports = {
-    crearArchivo
+    crearArchivo,
+    listarTabla
 }
