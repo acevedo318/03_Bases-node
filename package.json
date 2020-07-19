@@ -1,0 +1,22 @@
+{
+  "name": "03_bases-node",
+  "version": "1.0.0",
+  "description": "Aplicacion de linea de comandos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acevedo318/03_Bases-node.git"
+  },
+  "author": "Kevin Acevedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acevedo318/03_Bases-node/issues"
+  },
+  "homepage": "https://github.com/acevedo318/03_Bases-node#readme",
+  "dependencies": {
+    "yargs": "^15.4.1"
+  }
+}
